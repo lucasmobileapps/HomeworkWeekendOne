@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4"
+    android:orientation="horizontal" >
+
+
+
+    <Button
+        android:id="@+id/btnClear"
+        android:text="@string/hint_Clear"
+        android:onClick="onClear"/>
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:textSize="30sp"
+        android:background="#B3B2B2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:maxLength="14"
+        android:text="@string/hint_tvAnswer"
+        android:textAlignment="textEnd"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:text="@string/hint_1"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:text="@string/hint_2"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnThree"
+        android:text="@string/hint_3"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:text="@string/hint_Div"
+        android:onClick="onOperator"/>
+
+    <Button
+        android:id="@+id/btnFour"
+        android:text="@string/hint_4"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnFive"
+        android:text="@string/hint_5"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnSix"
+        android:text="@string/hint_6"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:text="@string/hint_Sub"
+        android:onClick="onOperator"/>
+
+    <Button
+        android:id="@+id/btnSeven"
+        android:text="@string/hint_7"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnEight"
+        android:text="@string/hint_8"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnNine"
+        android:text="@string/hint_9"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnMult"
+        android:text="@string/hint_Mult"
+        android:onClick="onOperator"/>
+
+    <Button
+        android:id="@+id/btnZero"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:text="@string/hint_0"
+        android:onClick="onDigit"/>
+
+    <Button
+        android:id="@+id/btnDecimal"
+        android:text="@string/hint_decimal"
+        android:onClick="onDecimalPoint"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="2"
+        android:text="@string/hint_Add"
+        android:onClick="onOperator"/>
+
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:text="@string/hint_Equal"
+        android:onClick="onEqual"/>
+
+</GridLayout>
